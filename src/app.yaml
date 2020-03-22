@@ -1,0 +1,3 @@
+service: memesauce-io
+env: flex
+runtime: custom
