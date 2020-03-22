@@ -2,7 +2,7 @@
 FROM microsoft/dotnet:2.2-sdk-alpine3.8 as builder
 WORKDIR /source
 RUN apk add --update nodejs nodejs-npm
-COPY *.csproj .
+COPY MemeSauce.csproj .
 RUN dotnet restore
 COPY package.json .
 RUN npm install
