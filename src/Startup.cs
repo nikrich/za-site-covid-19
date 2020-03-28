@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using CovidVisual.Providers;
+using WebEssentials.AspNetCore.Pwa;
 
 namespace CovidVisual
 {
@@ -23,8 +24,11 @@ namespace CovidVisual
             // Add framework services.
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
-            services.AddProgressiveWebApp();
+          
+            services.AddProgressiveWebApp(new PwaOptions
+            {              
+                RegisterServiceWorker = false
+            });       
 
             // Simple example with dependency injection for a data provider.
             services.AddSingleton<IWeatherProvider, WeatherProviderFake>();

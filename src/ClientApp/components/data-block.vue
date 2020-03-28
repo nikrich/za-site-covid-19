@@ -4,7 +4,7 @@
         {{title}}
       </span>
       <span class="data-block--figure">
-        {{figure}}
+        {{figure.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}}
       </span>
     </div>
 </template>

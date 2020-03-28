@@ -41,6 +41,18 @@
     gtag('js', new Date());
 
     gtag('config', 'UA-161626798-1');
+
+    if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+            navigator.serviceWorker.register('/serviceworker.js')
+                .then(reg => {
+                    console.log('Registration succeeded. Scope is ' + reg.scope);
+                })
+                .catch(registrationError => {
+                    console.log('SW registration failed: ', registrationError);
+                });
+        });
+    }
     </script>
 
     @RenderSection("scripts", required: false)

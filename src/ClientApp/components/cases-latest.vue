@@ -4,7 +4,7 @@
       <div class="col col-md-4 mt-4">
         <div class="latest rounded p-5">          
           <span class="latest--figure">
-            {{latestFigure}} new cases
+            {{latestFigure.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}} new cases
           </span>    
           <span class="latest--date">
             Announced at {{latestDate}}
@@ -14,10 +14,10 @@
       <div class="col col-md-8 mt-4">
         <div class="tests rounded p-5">     
           <span class="tests--figure">
-            {{latestTests}}
+            {{latestTests.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}}
           </span>    
           <span class="tests--date">
-            tests conducted
+            TESTS CONDUCTED
           </span>  
         </div>
       </div>
