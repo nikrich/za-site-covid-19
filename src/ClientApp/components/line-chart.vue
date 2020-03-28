@@ -30,7 +30,7 @@ export default {
     labels: this.chartlabels,
     datasets: [
       {
-        label: 'Confirmed Cases',
+        label: 'Cumulative confirmed cases per day',
         backgroundColor: this.gradient,
         data: this.chartdata
       }

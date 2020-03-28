@@ -1,8 +1,11 @@
 <template>
     <div id="app">    
           <div class="header">
-            <div class="container">
-              Covid Visual
+            <div class="container">             
+              <span class="title">Covid Visual</span>  
+              <a class="coffee p-3 mt-3 " href="https://ko-fi.com/nikrich" target="_blank">             
+                Buy me a coffee
+              </a>            
             </div>
           </div>     
           <div>
@@ -29,11 +32,26 @@
   .header{
     display: block;
     width: 100%;    
-    background-color: #3326ae;
-    padding: 1em;
-    color: #fff;
+    background-color: #fff;     
+    -webkit-box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);
+    box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);
+  }
+
+  .title{
+    color: #000;
     font-size: 24px;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+    padding: 1em;   
+    display: inline-block;
+    background-color: #fff;
+  }
+
+  .coffee{
+    float: right;
+    -webkit-box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);
+    box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);    
+  }
+
+  .coffee:hover{
+    text-decoration: none;
   }
 </style>

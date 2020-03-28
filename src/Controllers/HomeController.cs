@@ -1,7 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 
-namespace MemeSauce.Controllers
+namespace CovidVisual.Controllers
 {
+    [ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
     public class HomeController : Controller
     {
         public IActionResult Index()

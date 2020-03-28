@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.SpaServices.Webpack;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using MemeSauce.Providers;
+using CovidVisual.Providers;
 
-namespace MemeSauce
+namespace CovidVisual
 {
     public class Startup
     {
@@ -23,6 +23,8 @@ namespace MemeSauce
             // Add framework services.
             services.AddMvc()
                 .SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+
+            services.AddProgressiveWebApp();
 
             // Simple example with dependency injection for a data provider.
             services.AddSingleton<IWeatherProvider, WeatherProviderFake>();

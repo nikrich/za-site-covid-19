@@ -1,4 +1,4 @@
-namespace MemeSauce.Models
+namespace CovidVisual.Models
 {
     public class WeatherForecast
     {

@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using MemeSauce.Models;
+using CovidVisual.Models;
 
-namespace MemeSauce.Providers
+namespace CovidVisual.Providers
 {
     public interface IWeatherProvider
     {

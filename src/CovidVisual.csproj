@@ -5,6 +5,7 @@
   <ItemGroup>
     <PackageReference Include="Google.Cloud.Firestore" Version="1.0.0" />
     <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="WebEssentials.AspNetCore.PWA" Version="1.0.59" />
   </ItemGroup>
   <ItemGroup>
     <!-- Files not to show in IDE -->

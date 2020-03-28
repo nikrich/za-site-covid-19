@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using MemeSauce.Models;
+using CovidVisual.Models;
 
-namespace MemeSauce.Providers
+namespace CovidVisual.Providers
 {
     public class WeatherProviderFake : IWeatherProvider
     {

@@ -2,7 +2,7 @@
 FROM microsoft/dotnet:2.2-sdk-alpine3.8 as builder
 WORKDIR /source
 RUN apk add --update nodejs nodejs-npm
-COPY MemeSauce.csproj .
+COPY CovidVisual.csproj .
 RUN dotnet restore
 COPY package.json .
 RUN npm install
@@ -18,4 +18,4 @@ ENV ASPNETCORE_URLS=http://+:8080
 
 # Run the application. REPLACE the name of dll with the name of the dll produced by your application
 EXPOSE 8080
-CMD ["dotnet", "MemeSauce.dll"]
+CMD ["dotnet", "CovidVisual.dll"]

@@ -7,7 +7,7 @@
     "name": "ASP.NET Core with Vue.js 2",
     "primaryOutputs": [
         {
-          "path": "MemeSauce.csproj"
+          "path": "CovidVisual.csproj"
         }
       ],
     "shortName": "vuejs",
@@ -15,7 +15,7 @@
         "language": "C#",
         "type": "project"
       },
-    "sourceName": "MemeSauce",
+    "sourceName": "CovidVisual",
     "preferNameDirectory": true,
     "sources": [
         {

@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "MemeSauce": {
+    "CovidVisual": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

@@ -1,9 +1,9 @@
 <template>
-  <div class="cases--line-chart mt-3">
+  <div class="cases--line-chart mt-4">
     <div  class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <bar-chart
+      <div class="row justify-content-md-center">
+        <div class="col-sm">
+          <line-chart
             v-if="loaded"
             :chartdata="chartdata"
             :chartlabels="labels"
@@ -16,23 +16,24 @@
 </template>
 
 <script>
-import BarChart from './bar-chart.vue'
+import LineChart from './line-chart.vue'
 
 export default {
-  name: 'CasesChart',
-  components: { BarChart },
+  name: 'CasesAggregateChart',
+  components: { LineChart },
   data: () => ({
     loaded: false,
     chartdata: [],
     labels: [], 
     options: {
       responsive: true,
+      responsiveAnimationDuration: 500,
       maintainAspectRatio: false
     }
   }),
   methods: {
     async loadData () {
-      let response = await this.$http.get(`https://covidvisual.com/api/Cases/getallperday`);
+      let response = await this.$http.get(`https://covidvisual.com/api/cases/getdayaggregate`);
 
       this.chartdata = response.data.map(x => x.casesTotal);
       this.labels = response.data.map(x => new Date(x.date).toLocaleDateString('en-ZA'));
@@ -49,3 +50,9 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .cases--line-chart{
+    background-color: rgba(51,38,174,0.05);
+  }
+</style>

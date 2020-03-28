@@ -29,8 +29,8 @@ export default {
   .data-block {
     border-radius: 1em;
     overflow: hidden;
-    -webkit-box-shadow: 0 16px 24px 2px rgba(51,38,174,0.05), 0 6px 30px 5px rgba(51,38,174,0.05), 0 8px 10px -7px rgba(51,38,174,0.05);
-    box-shadow: 0 16px 24px 2px rgba(51,38,174,0.05), 0 6px 30px 5px rgba(51,38,174,0.05), 0 8px 10px -7px rgba(51,38,174,0.05);
+    -webkit-box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);
+    box-shadow: 0 2px 2px 0 rgba(51,38,174,0.05), 0 3px 1px -2px rgba(51,38,174,0.05), 0 1px 5px 0 rgba(51,38,174,0.05);
     padding: 2em;
   }
 

@@ -1,10 +1,11 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
-using MemeSauce.Providers;
+using CovidVisual.Providers;
 
-namespace MemeSauce.Controllers
+namespace CovidVisual.Controllers
 {
     [Route("api/[controller]")]
+    [ResponseCache(Duration = 3600, Location = ResponseCacheLocation.Any)]
     public class WeatherController : Controller
     {
         private readonly IWeatherProvider _weatherProvider;
